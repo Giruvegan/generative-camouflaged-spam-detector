@@ -263,59 +263,6 @@ def GDA(sequence, num=10, keep_ratio=0.4):
 
 if __name__ == '__main__':
 
-    # 基于图生成
-    # spam_gda_path = '../data/dataset/sms/spam_train_g_da_merge.txt'
-    # spam_train_path = '../data/dataset/sms/spam_train.txt'
-    # with open(spam_gda_path, 'w', encoding='utf-8') as f_out:
-    #     with open(spam_train_path, 'r', encoding='utf-8') as f:
-    #         lines = f.readlines()
-    #         print(len(lines))
-    #         idx = 0
-    #         for line in lines:
-    #             idx += 1
-    #             if idx%1000==0:
-    #                 print(idx)
-    #             f_out.write(line)
-    #             data_aug = GDA(line.strip().split(' '), 10, 0.8)
-    #             for d in data_aug:
-    #                 f_out.write(' '.join(d) + '\n')
-    #             f_out.write('===========================================================' + '\n')
-    #
-    # ham_gda_path = '../data/dataset/sms/ham_train_g_da_merge.txt'
-    # ham_train_path = '../data/dataset/sms/ham_train.txt'
-    # with open(ham_gda_path, 'w', encoding='utf-8') as f_out:
-    #     with open(ham_train_path, 'r', encoding='utf-8') as f:
-    #         lines = f.readlines()
-    #         print(len(lines))
-    #         idx = 0
-    #         for line in lines:
-    #             idx += 1
-    #             if idx % 1000 == 0:
-    #                 print(idx)
-    #             f_out.write(line)
-    #             data_aug = GDA(line.strip().split(' '), 10, 0.8)
-    #             for d in data_aug:
-    #                 f_out.write(' '.join(d) + '\n')
-    #             f_out.write('===========================================================' + '\n')
-
-
-    # 给安全部生成数据
-    # spam_gda_path = '../data/dataset/化学品词短扩展结果.txt'
-    # spam_train_path = '../data/dataset/化学品词短.txt'
-    # with open(spam_gda_path, 'w', encoding='utf-8') as f_out:
-    #     with open(spam_train_path, 'r', encoding='utf-8') as f:
-    #         lines = f.readlines()
-    #         print(len(lines))
-    #         idx = 0
-    #         for line in lines:
-    #             idx += 1
-    #             if idx%1000==0:
-    #                 print(idx)
-    #             f_out.write(line)
-    #             data_aug = GDA(list(line.strip()), 10, 0.4)
-    #             for d in data_aug:
-    #                 f_out.write(''.join(d) + '\n')
-    #             f_out.write('===========================================================' + '\n')
 
     # AMVAE + 图后处理生成
     f = open('../data/dataset/sms/ham_train.txt', 'r').readlines()
