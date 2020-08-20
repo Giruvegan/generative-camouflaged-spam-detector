@@ -9,5 +9,11 @@ the data augmentation related code. The origin spam dataset is the same as our a
 ## Cite the paper
 
 ```
-
+@inproceedings{jiang2020camouflaged,
+  title={Camouflaged Chinese Spam Content Detection with Semi-supervised Generative Active Learning},
+  author={Jiang, Zhuoren and Gao, Zhe and Duan, Yuguang and Kang, Yangyang and Sun, Changlong and Zhang, Qiong and Liu, Xiaozhong},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={3080--3085},
+  year={2020}
+}
 ```
